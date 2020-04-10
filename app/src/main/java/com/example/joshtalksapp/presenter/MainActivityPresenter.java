@@ -13,6 +13,7 @@ public class MainActivityPresenter {
     }
 
     public void fetchImageRecordsByTag(String tag){
+
         //Remote Data Source can be DB or web service client
         RemoteDataSource dataSourceInstance = WebServiceClient.getInstance();
         dataSourceInstance.fetchImageRecordsByTag(this, tag);
